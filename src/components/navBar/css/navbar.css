@@ -1,0 +1,126 @@
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  font-style: normal;
+  color: white;
+}
+.menu {
+  font-weight: 600;
+  display: flex;
+  font-size: 1.2rem;
+  font-style: normal;
+  color: white;
+}
+.nav_link {
+
+  color: #ffffff !important;
+}
+.login {
+  font-weight: 800 !important;
+  font-size: 1.2rem;
+  padding: 0rem 2rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  color: #ffffff !important;
+  .nav_link {
+    padding: 0%;
+    color: #ffffff !important;
+  }
+
+ 
+}
+.nav-item:hover {
+  padding: 0%;
+
+  color: #0080ff !important;
+  border-radius: 0rem;
+  .login {
+    background: linear-gradient(to right, #e0f2ff, #c2e1ff);
+    color: #007dfe !important;
+  }
+}
+.nav_section {
+  position: fixed;
+  top: 0;
+  height: 15dvh;
+  background: #082d64;
+  .row {
+    height: 100%;
+  }
+}
+.burger {
+  display: none;
+}
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background-color: #082248;
+
+  span {
+    background-color: #ffffff;
+    display: flex;
+    align-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+}
+.nav-link{
+  padding: 0px  !important;
+}
+.nav-item{
+  align-content: center;
+ 
+}
+
+@media (max-width: 767.98px) {
+  .offcanvas {
+    width: 70% !important;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .offcanvas.show {
+    transform: translateX(0);
+  }
+  .burger {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menu {
+    display: none !important;
+  }
+  .login_container {
+    display: none !important;
+  }
+  .logo_container {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    justify-content: space-between;
+    button {
+      scale: 0.6;
+      background-color: #ffffff;
+    }
+    span {
+      background-color: #ffffff;
+      display: flex;
+      align-content: center;
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+  }
+  .nav_section {
+    height: 10dvh;
+  }
+}

@@ -1,0 +1,54 @@
+.hero {
+
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15dvh;
+  text-align: center;
+}
+.tag_image {
+  img {
+    width: 90%;
+  }
+}
+.tag_line {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  h1 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900 !important;
+    font-style: normal;
+    color: #004d9b;
+  }
+
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #007dfe;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 1rem;
+  }
+  button:hover {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #ffffff;
+    color: #007dfe;
+    outline: 1px solid #007dfe;
+    border-radius: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero {
+    .row {
+      flex-direction: column-reverse;
+      margin-top: 10dvh;
+    }
+  }
+}
