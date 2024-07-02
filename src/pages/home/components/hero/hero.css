@@ -1,10 +1,8 @@
 .hero {
-
   height: 100%;
   width: 100%;
   justify-content: center;
   align-content: center;
-  margin-top: 15dvh;
   text-align: center;
 }
 .tag_image {
@@ -48,7 +46,6 @@
   .hero {
     .row {
       flex-direction: column-reverse;
-      margin-top: 10dvh;
     }
   }
 }

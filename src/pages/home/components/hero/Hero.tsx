@@ -1,14 +1,14 @@
 import { FC } from "react";
-import "../css/hero.css";
+import "./hero.css";
 
-import HeroImg from "../../../../../assets/8953254.jpg";
-import ContentLayout from "../../../../../layouts/contentLayout/ContentLayout";
+import HeroImg from "../../../../assets/8953254.jpg";
+import ContentLayout from "../../../../layouts/contentLayout/ContentLayout";
 interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
     <>
-      <ContentLayout height="85dvh">
+      <ContentLayout height="85dvh" isMarginTop={true}>
         <div className="container-fluid hero">
           <div className="row ">
             <div className="tag_line col-lg-6 col-md-6">
@@ -21,7 +21,6 @@ const Hero: FC<HeroProps> = ({}) => {
             <div className="tag_image col-lg-6  col-md-6">
               <img src={HeroImg} alt="illustration_banking" loading="lazy" />
             </div>
-         
           </div>
         </div>
       </ContentLayout>

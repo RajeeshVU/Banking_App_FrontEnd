@@ -1,12 +1,10 @@
 import { FC, useState } from "react";
 import Nav from "react-bootstrap/Nav";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
-
-import ContentLayout from "../../../layouts/contentLayout/ContentLayout";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Button, Offcanvas } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
 import { PiBankBold } from "react-icons/pi";
-import "../css/navbar.css";
+import "./navbar.css";
 interface NavBarProps {}
 
 const NavBar: FC<NavBarProps> = ({}) => {
@@ -20,7 +18,7 @@ const NavBar: FC<NavBarProps> = ({}) => {
   const loginState=pathname.split('/').includes('login')
   return (
     <>
-      {/* <ContentLayout fluid={true}> */}
+    
       <div className="container-fluid nav_section">
         <div className="row ">
           <div className="col-12  logo_container py-2">
@@ -83,7 +81,7 @@ const NavBar: FC<NavBarProps> = ({}) => {
           </Offcanvas.Body>
         </Offcanvas>
       </div>
-      {/* </ContentLayout> */}
+     
     </>
   );
 };

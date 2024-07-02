@@ -1,6 +1,6 @@
 import { FC } from "react";
 import MainLayout from "../../layouts/mainLayout/MainLayout";
-import Hero from "./components/hero/component/Hero";
+import Hero from "./components/hero/Hero";
 
 interface HomeProps {}
 

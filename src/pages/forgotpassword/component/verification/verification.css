@@ -1,0 +1,26 @@
+.verify_password {
+    height: 100%;
+  
+  
+  .form{
+      align-items: center;
+      justify-items: center;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-content: center !important;
+    gap: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    justify-content: center;
+    h5{
+      text-align: center;
+    }
+  }
+  }
+  @media (max-width: 767.98px) {
+      .form-group {
+        padding: 1rem;
+        }
+    }
